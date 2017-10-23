@@ -1,0 +1,8 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+git_list:
+    path:     /git/list/{page}
+    defaults: { _controller: AppBundle:Default:index, page:1 }
+    requirements:
+        page: '\d+'
